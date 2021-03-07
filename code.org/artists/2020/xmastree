@@ -1,0 +1,34 @@
+penColour("#ffa000");
+for (var count = 0; count < 3; count++) {
+  jumpDown(50);
+}
+moveDown(50);
+jumpUp(50);
+penColour("#228b22");
+for (var count2 = 0; count2 < 3; count2++) {
+  moveLeft(50);
+  moveLeft(50);
+  moveUpRight(70.71067811865476);
+  moveUpRight(70.71067811865476);
+  moveDownRight(70.71067811865476);
+  moveDownRight(70.71067811865476);
+  moveLeft(50);
+  moveLeft(50);
+  jumpUp(50);
+  jumpUp(50);
+}
+jumpDownLeft(70.71067811865476);
+penPattern("spikyLine");
+moveDownRight(70.71067811865476);
+moveUpRight(70.71067811865476);
+for (var count3 = 0; count3 < 2; count3++) {
+  jumpDownLeft(70.71067811865476);
+}
+penPattern("flowerPinkLine");
+moveDownRight(70.71067811865476);
+moveUpRight(70.71067811865476);
+jumpDownLeft(70.71067811865476);
+jumpDownLeft(70.71067811865476);
+penPattern("flowerYellowLine");
+moveDownRight(70.71067811865476);
+moveUpRight(70.71067811865476);
