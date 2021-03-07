@@ -1,0 +1,17 @@
+for (var count = 0; count < 3; count++) {
+  jumpUpLeft(70.71067811865476);
+}
+jumpLeft(50);
+penPattern("flowerPinkLine");
+for (var count4 = 0; count4 < 4; count4++) {
+  for (var count2 = 0; count2 < 4; count2++) {
+      moveUpRight(70.71067811865476);
+    moveDownRight(70.71067811865476);
+  }
+  for (var count3 = 0; count3 < 4; count3++) {
+      moveDownLeft(70.71067811865476);
+    moveUpLeft(70.71067811865476);
+  }
+  jumpDown(50);
+  jumpDown(50);
+}
