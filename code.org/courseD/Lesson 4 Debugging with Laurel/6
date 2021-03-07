@@ -1,0 +1,29 @@
+for (var count = 0; count < 3; count++) {
+  moveForward();
+  collect();
+}
+turnRight();
+moveForward();
+moveForward();
+collect();
+turnRight();
+moveForward();
+collect();
+moveForward();
+collect();
+
+/*
+collect();
+collect();
+collect();
+*/
+
+/*
+for (var count2 = 0; count2 < 3; count2++) {
+}
+*/
+
+/*
+moveForward();
+moveForward();
+*/
