@@ -1,0 +1,55 @@
+jumpUp(50);
+jumpUp(50);
+jumpLeft(50);
+jumpLeft(50);
+penPattern("smileyLine");
+moveUpRight(70.71067811865476);
+moveUpRight(70.71067811865476);
+moveDownRight(70.71067811865476);
+moveDownRight(70.71067811865476);
+for (var count = 0; count < 4; count++) {
+  moveDown(50);
+}
+for (var count2 = 0; count2 < 4; count2++) {
+  moveLeft(50);
+}
+for (var count3 = 0; count3 < 4; count3++) {
+  moveUp(50);
+}
+for (var count4 = 0; count4 < 4; count4++) {
+  moveRight(50);
+}
+jumpDown(50);
+jumpDown(50);
+moveDownRight(70.71067811865476);
+moveDownRight(70.71067811865476);
+moveLeft(50);
+moveLeft(50);
+for (var count5 = 0; count5 < 4; count5++) {
+  jumpLeft(50);
+}
+moveLeft(50);
+moveLeft(50);
+moveUpRight(70.71067811865476);
+moveUpRight(70.71067811865476);
+jumpDown(50);
+jumpDown(50);
+penPattern("lightningLine");
+moveDown(50);
+moveDown(50);
+for (var count6 = 0; count6 < 4; count6++) {
+  moveRight(50);
+}
+moveUp(50);
+moveUp(50);
+jumpLeft(50);
+jumpLeft(50);
+moveDown(50);
+moveDown(50);
+for (var count7 = 0; count7 < 3; count7++) {
+  jumpUp(50);
+}
+drawSticker("Alien", null);
+for (var count8 = 0; count8 < 5; count8++) {
+  jumpDown(50);
+}
