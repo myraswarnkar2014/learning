@@ -1,0 +1,141 @@
+/*
+  *** ICE HOCKEY ***
+
+  This is a game where you move the PUCK from the starting point
+  to the pink square.
+  There are 4 directions.
+  
+  N - North
+  S - South
+  E - East
+  W - West
+
+  Combine all the steps you take into one line.
+  For Example: "NNNWW".
+  In this example the PUCK will take 3 steps north and 2 steps west.
+  
+  
+  WHICH IS THE SHORTEST ??????????
+
+  Place your direction between the two "inverted commas"
+*/
+var direction = "EEESEEEESS";
+
+
+/*
+1. The top one = 1
+2. The bottom one = 2
+
+CHANGE THE 0 TO 1 OR 2
+
+*/
+
+var shortest = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  All the below code goes into making an app like this.
+  Don't worry, you don't have to code anything crazy like this.
+  But, if you want to take a look be my guest.
+*/
+
+
+var puck = createSprite(200, 380, 20, 50);
+puck.setAnimation("puck");
+puck.width = 40;
+puck.height = 40;
+puck.x = 100;
+puck.y = 100;
+
+
+var finalNorthCount = direction.replace(/[^N]/g, "").length;
+var finalSouthCount = direction.replace(/[^S]/g, "").length;
+var finalEastCount = direction.replace(/[^E]/g, "").length;
+var finalWestCount = direction.replace(/[^W]/g, "").length;
+
+var finalX = puck.x + (finalEastCount*40) - (finalWestCount*40);
+var finalY = puck.y - (finalNorthCount*40) + (finalSouthCount*40);
+
+console.log(finalX, finalY);
+
+var i = 0; // move through the direction
+var j = 0; // move through the board
+function draw() {
+  if (i > direction.length) {
+    if (puck.x == 380 && puck.y == 220) {
+     textSize(20);
+     stroke("lightgreen");
+     text("YOU WIN!", 200, 300);
+    } else {
+      textSize(20);
+      stroke("red");
+      text("TRY AGAIN!", 200, 300);
+    }
+    
+    return;
+  } else {
+    background("white");
+  }
+  
+  for (var k=0; k <= 10; k++) {
+    line(k*40, 0, k*40, 400);
+    line(0, k*40, 400, k*40);
+  }
+  
+  
+  // PATH 1
+  fill(rgb(127, 255, 0, 0.5));
+  rect(80, 80, 160, 40);
+  rect(200, 120, 160, 40);
+  rect(360, 120, 40, 80);
+  fill(rgb(255,160,122, 0.5));
+  rect(360, 200, 40, 40);
+  
+  
+  // PATH 2
+  fill(rgb(127, 255, 0, 0.5));
+  rect(80, 80, 40, 200);
+  rect(120, 240, 280, 40);
+  fill(rgb(255,160,122, 0.5));
+  rect(360, 200, 40, 40);
+  
+  if (direction[i] == "W") {
+    puck.x = puck.x - 4; 
+  }
+  else if (direction[i] == "E") {
+    puck.x = puck.x + 4; 
+  }
+  else if (direction[i] == "N") {
+    puck.y = puck.y - 4; 
+  }
+  else if (direction[i] == "S"){
+    puck.y = puck.y + 4; 
+  }
+  
+  drawSprites();
+  
+  if (j >= 9) {
+    j = 0;
+    i = i + 1;
+  } else {
+    j = j+1;
+  }
+}
+
+
+
+
+
+
+
