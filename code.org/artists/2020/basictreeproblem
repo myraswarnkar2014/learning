@@ -1,0 +1,23 @@
+jumpLeft(50);
+jumpLeft(50);
+penPattern("DEFAULT");
+moveUpRight(70.71067811865476);
+moveDownRight(70.71067811865476);
+moveDownLeft(70.71067811865476);
+moveUpLeft(70.71067811865476);
+moveDownRight(70.71067811865476);
+jumpUp(50);
+drawSticker("Princess", null);
+jumpDown(50);
+jumpDown(50);
+penPattern("flowerPinkLine");
+moveRight(50);
+moveRight(50);
+for (var count = 0; count < 3; count++) {
+  moveLeft(50);
+  moveLeft(50);
+}
+for (var count2 = 0; count2 < 34; count2++) {
+  jumpDown(50);
+}
+
