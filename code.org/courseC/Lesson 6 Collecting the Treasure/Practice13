@@ -1,0 +1,16 @@
+for (var count = 0; count < 3; count++) {
+  moveForward();
+  collect();
+}
+for (var count3 = 0; count3 < 2; count3++) {
+  turnLeft();
+  for (var count2 = 0; count2 < 2; count2++) {
+      moveForward();
+    collect();
+  }
+}
+for (var count4 = 0; count4 < 2; count4++) {
+  turnLeft();
+  moveForward();
+  collect();
+}
