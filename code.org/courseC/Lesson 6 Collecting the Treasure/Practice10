@@ -1,0 +1,7 @@
+for (var count2 = 0; count2 < 3; count2++) {
+  for (var count = 0; count < 2; count++) {
+      moveForward();
+  }
+  collect();
+  turnRight();
+}
