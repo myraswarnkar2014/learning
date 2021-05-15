@@ -1,0 +1,13 @@
+penColour('#ffa000');
+for (var count = 0; count < 4; count++) {
+  moveForward(200);
+  turnLeft(90);
+}
+
+/*
+moveForward(200);
+turnLeft(90);
+moveForward(200);
+turnLeft(90);
+moveForward(200);
+*/
