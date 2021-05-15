@@ -1,0 +1,12 @@
+penColour(colour_random());
+moveForward(150);
+turnRight(45);
+moveForward(75);
+turnRight(90);
+moveForward(75);
+turnRight(45);
+moveForward(150);
+turnRight(45);
+moveForward(75);
+turnRight(90);
+moveForward(75);
