@@ -1,0 +1,19 @@
+for (var count2 = 0; count2 < 4; count2++) {
+  moveForward();
+  getCorn();
+  for (var count = 0; count < 4; count++) {
+      moveForward();
+  }
+  getPumpkin();
+  turnLeft();
+}
+
+/*
+moveForward();
+getCorn();
+for (var count3 = 0; count3 < 4; count3++) {
+  moveForward();
+}
+getPumpkin();
+*/
+OK
