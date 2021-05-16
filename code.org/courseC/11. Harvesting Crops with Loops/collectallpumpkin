@@ -1,0 +1,25 @@
+for (var count = 0; count < 5; count++) {
+  moveForward();
+}
+for (var count2 = 0; count2 < 4; count2++) {
+  getPumpkin();
+}
+turnLeft();
+for (var count3 = 0; count3 < 5; count3++) {
+  moveBackward();
+}
+for (var count4 = 0; count4 < 4; count4++) {
+  getPumpkin();
+}
+turnRight();
+for (var count5 = 0; count5 < 5; count5++) {
+  moveBackward();
+}
+for (var count6 = 0; count6 < 4; count6++) {
+  getPumpkin();
+}
+
+/*
+getPumpkin();
+*/
+OK
