@@ -1,0 +1,11 @@
+for (var count3 = 0; count3 < 2; count3++) {
+  moveForward();
+  moveForward();
+  for (var count = 0; count < 6; count++) {
+      getCorn();
+  }
+  moveForward();
+  for (var count2 = 0; count2 < 4; count2++) {
+      getPumpkin();
+  }
+}
