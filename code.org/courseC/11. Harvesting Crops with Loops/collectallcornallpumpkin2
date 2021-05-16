@@ -1,0 +1,13 @@
+for (var count = 0; count < 5; count++) {
+  moveForward();
+  getCorn();
+}
+turnRight();
+moveForward();
+turnRight();
+for (var count2 = 0; count2 < 5; count2++) {
+  moveForward();
+}
+for (var count3 = 0; count3 < 7; count3++) {
+  getPumpkin();
+}
