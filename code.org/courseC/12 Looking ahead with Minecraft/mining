@@ -1,0 +1,11 @@
+placeTorch();
+turnLeft();
+for (var count = 0; count < 2; count++) {
+  moveForward();
+  destroyBlock();
+}
+turnRight();
+for (var count2 = 0; count2 < 3; count2++) {
+  moveForward();
+}
+placeTorch();
