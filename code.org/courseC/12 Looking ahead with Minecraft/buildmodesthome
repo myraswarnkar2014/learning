@@ -1,0 +1,7 @@
+for (var count2 = 0; count2 < 2; count2++) {
+  turnRight();
+  for (var count = 0; count < 6; count++) {
+      placeBlock("rail");
+    moveForward();
+  }
+}
