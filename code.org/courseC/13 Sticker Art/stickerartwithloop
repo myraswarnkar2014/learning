@@ -1,0 +1,31 @@
+penPattern("candycaneLine");
+turnLeft(45);
+moveForward(100);
+turnRight(45);
+moveForward(100);
+turnRight(45);
+moveForward(100);
+turnLeft(90);
+turnRight(45);
+jumpBackward(220);
+penPattern("brickLine");
+for (var count = 0; count < 4; count++) {
+  moveForward(200);
+  turnRight(90);
+}
+jumpToXY(150, 200);
+penPattern("tiretrackLine");
+for (var count2 = 0; count2 < 4; count2++) {
+  moveForward(60);
+  turnRight(90);
+}
+for (var count3 = 0; count3 < 4; count3++) {
+  drawSticker("Dragon", null);
+  turnLeft(90);
+}
+jumpTo(13);
+drawSticker("Turtle", null);
+jumpTo(12);
+turnLeft(90);
+jumpTo(13);
+drawSticker("Turtle", null);
