@@ -1,0 +1,6 @@
+moveForward();
+collect();
+moveForward();
+collect();
+moveForward();
+collect();
