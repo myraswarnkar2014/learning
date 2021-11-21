@@ -1,0 +1,11 @@
+moveForward();
+collect();
+turnRight();
+moveForward();
+collect();
+turnLeft();
+moveForward();
+collect();
+turnRight();
+moveForward();
+collect();
