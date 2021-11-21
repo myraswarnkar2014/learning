@@ -1,0 +1,13 @@
+moveForward();
+turnLeft();
+for (var count = 0; count < 2; count++) {
+  moveForward();
+}
+turnRight();
+for (var count2 = 0; count2 < 3; count2++) {
+  moveForward();
+}
+turnLeft();
+for (var count3 = 0; count3 < 2; count3++) {
+  moveForward();
+}
