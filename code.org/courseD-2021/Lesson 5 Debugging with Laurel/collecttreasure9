@@ -1,0 +1,11 @@
+for (var count = 0; count < 2; count++) {
+  moveForward();
+  turnRight();
+  moveForward();
+  collect();
+  collect();
+  collect();
+  collect();
+  collect();
+  turnLeft();
+}
