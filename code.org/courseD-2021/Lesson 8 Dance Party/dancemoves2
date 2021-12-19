@@ -1,0 +1,24 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("SLOTH", {x: 300, y: 200});
+  makeAnonymousDanceSprite("BEAR", {x: 100, y: 200});
+});
+
+whenKey("up", function () {
+  doMoveEachLR("BEAR", MOVES.Roll, -1);
+  doMoveEachLR("SLOTH", MOVES.Dab, -1);
+});
+
+whenKey("right", function () {
+  doMoveEachLR("BEAR", MOVES.XBend, -1);
+  doMoveEachLR("SLOTH", MOVES.XHighKick, -1);
+});
+
+whenKey("down", function () {
+  doMoveEachLR("BEAR", MOVES.Drop, -1);
+  doMoveEachLR("SLOTH", MOVES.ClapHigh, -1);
+});
+
+whenKey("left", function () {
+  doMoveEachLR("SLOTH", MOVES.Floss, -1);
+  doMoveEachLR("BEAR", MOVES.XFever, -1);
+});
