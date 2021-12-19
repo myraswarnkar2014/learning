@@ -1,0 +1,3 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("SLOTH", {x: 200, y: 100});
+});
