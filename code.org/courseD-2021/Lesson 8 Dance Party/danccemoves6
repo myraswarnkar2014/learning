@@ -1,0 +1,25 @@
+whenSetup(function () {
+  setBackgroundEffectWithPalette("color_cycle", "neon");
+  makeAnonymousDanceSprite("UNICORN", {x: 200, y: 200});
+  makeNewDanceSpriteGroup(10, "FROG", "border");
+});
+
+whenKey("left", function () {
+  doMoveEachLR(sprites, MOVES.XHeadHips, -1);
+});
+
+whenKey("up", function () {
+  changeMoveEachLR(sprites, MOVES.ClapHigh, -1);
+});
+
+whenKey("right", function () {
+  doMoveEachLR(sprites, MOVES.XHop, -1);
+});
+
+whenKey("down", function () {
+  doMoveEachLR(sprites, MOVES.DoubleJam, -1);
+});
+
+atTimestamp(4, "measures", function () {
+  doMoveEachLR(sprites, MOVES.Drop, -1);
+});
