@@ -1,0 +1,23 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("SLOTH", {x: 200, y: 200});
+});
+
+whenKey("right", function () {
+  doMoveEachLR("SLOTH", MOVES.XBend, -1);
+});
+
+whenKey("up", function () {
+  doMoveEachLR("SLOTH", MOVES.XHighKick, -1);
+});
+
+whenKey("down", function () {
+  doMoveEachLR("SLOTH", MOVES.XClapSide, 1);
+});
+
+whenKey("left", function () {
+  doMoveEachLR("SLOTH", MOVES.Drop, 1);
+});
+
+whenKey("a", function () {
+  doMoveEachLR("SLOTH", MOVES.XSlide, -1);
+});
