@@ -1,0 +1,11 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("PINEAPPLE", {x: 200, y: 200});
+});
+
+atTimestamp(4, "measures", function () {
+  changeMoveEachLR("PINEAPPLE", MOVES.Floss, -1);
+});
+
+atTimestamp(6, "measures", function () {
+  changeMoveEachLR("PINEAPPLE", MOVES.Clown, -1);
+});
