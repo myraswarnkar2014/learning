@@ -1,0 +1,11 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("SHARK", {x: 200, y: 200});
+  makeNewDanceSpriteGroup(4, "DOG", "row");
+  setPropEach("DOG", "tint", 45);
+});
+
+atTimestamp(4, "measures", function () {
+  setBackgroundEffectWithPalette("snowflakes", "rave");
+  changeMoveEachLR("DOG", MOVES.Kick, -1);
+  changeMoveEachLR("SHARK", MOVES.DoubleJam, 1);
+});
