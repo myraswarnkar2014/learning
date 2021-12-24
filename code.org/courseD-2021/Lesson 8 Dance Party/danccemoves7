@@ -1,0 +1,7 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("SHARK", {x: 200, y: 200});
+});
+
+atTimestamp(4, "measures", function () {
+  changeMoveEachLR("SHARK", MOVES.Thriller, -1);
+});
