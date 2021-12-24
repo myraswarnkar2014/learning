@@ -1,0 +1,11 @@
+whenSetup(function () {
+  setBackgroundEffectWithPalette("diamonds", "cool");
+  makeNewDanceSpriteGroup(6, "CAT", "row");
+  makeAnonymousDanceSprite("FROG", {x: 200, y: 200});
+  setPropEach("CAT", "scale", 98);
+});
+
+atTimestamp(4, "measures", function () {
+  changeMoveEachLR("CAT", MOVES.Floss, -1);
+  changeMoveEachLR("FROG", MOVES.Drop, -1);
+});
