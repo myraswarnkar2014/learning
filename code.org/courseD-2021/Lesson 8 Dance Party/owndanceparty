@@ -1,0 +1,31 @@
+whenSetup(function () {
+  makeNewDanceSpriteGroup(10, "UNICORN", "border");
+  makeNewDanceSpriteGroup(2, "BEAR", "circle");
+  startMappingEach("UNICORN", "scale", "treble");
+  startMappingEach("BEAR", "scale", "mid");
+});
+
+atTimestamp(4, "measures", function () {
+  setVisibleEach("UNICORN", true);
+  setDanceSpeedEach("BEAR", 2);
+});
+
+everySeconds(2, "measures", function () {
+  setBackgroundEffectWithPalette("rand", "cool");
+});
+
+whenKey("right", function () {
+  doMoveEachLR(sprites, MOVES.XKnee, -1);
+});
+
+whenKey("down", function () {
+  doMoveEachLR(sprites, MOVES.XClapSide, -1);
+});
+
+whenKey("left", function () {
+  doMoveEachLR(sprites, MOVES.XFever, -1);
+});
+
+whenKey("up", function () {
+  doMoveEachLR(sprites, MOVES.XHeadHips, -1);
+});
