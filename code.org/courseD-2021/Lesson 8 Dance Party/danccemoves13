@@ -1,0 +1,11 @@
+whenSetup(function () {
+  setBackgroundEffectWithPalette("music_wave", "neon");
+  makeNewDanceSpriteGroup(10, "SLOTH", "border");
+  makeAnonymousDanceSprite("UNICORN", {x: 200, y: 200});
+});
+
+everySeconds(5, "measures", function () {
+  setBackgroundEffectWithPalette("rand", "neon");
+  changeMoveEachLR("SLOTH", "rand", -1);
+  changeMoveEachLR("UNICORN", "rand", -1);
+});
