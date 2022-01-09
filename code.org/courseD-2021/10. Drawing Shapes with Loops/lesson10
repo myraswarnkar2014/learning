@@ -1,0 +1,6 @@
+penWidth(20);
+for (var count = 0; count < 8; count++) {
+  penColour(colour_random());
+  moveForward(80);
+  turnRight(45);
+}
