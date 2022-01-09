@@ -1,0 +1,19 @@
+for (var count = 0; count < 5; count++) {
+  moveForward();
+}
+turnRight();
+for (var count2 = 0; count2 < 2; count2++) {
+  moveForward();
+}
+turnRight();
+for (var count3 = 0; count3 < 5; count3++) {
+  moveForward();
+}
+turnLeft();
+for (var count4 = 0; count4 < 2; count4++) {
+  moveForward();
+}
+turnLeft();
+for (var count5 = 0; count5 < 5; count5++) {
+  moveForward();
+}
