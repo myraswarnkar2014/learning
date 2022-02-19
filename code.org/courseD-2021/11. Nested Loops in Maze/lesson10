@@ -1,0 +1,9 @@
+for (var count3 = 0; count3 < 4; count3++) {
+  for (var count2 = 0; count2 < 3; count2++) {
+      moveForward();
+    for (var count = 0; count < 12; count++) {
+          getNectar();
+    }
+  }
+  turnRight();
+}
