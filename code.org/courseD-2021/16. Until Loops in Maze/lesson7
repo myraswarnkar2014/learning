@@ -1,0 +1,6 @@
+while (notFinished()) {
+  while (isPathForward()) {
+      moveForward();
+  }
+  turnRight();
+}
