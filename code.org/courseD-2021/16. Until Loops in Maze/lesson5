@@ -1,0 +1,6 @@
+while (notFinished()) {
+  moveForward();
+  turnLeft();
+  moveForward();
+  turnRight();
+}
