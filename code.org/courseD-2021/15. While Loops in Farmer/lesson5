@@ -1,0 +1,4 @@
+moveForward();
+while (pilePresent()) {
+  dig();
+}
