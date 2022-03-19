@@ -1,0 +1,10 @@
+moveForward();
+if (atFlower()) {
+  getNectar();
+}
+for (var count = 0; count < 6; count++) {
+  moveForward();
+  if (atFlower()) {
+    getNectar();
+  }
+}
