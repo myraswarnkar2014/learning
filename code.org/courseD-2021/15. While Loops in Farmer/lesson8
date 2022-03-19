@@ -1,0 +1,16 @@
+for (var count = 0; count < 2; count++) {
+  moveForward();
+  while (holePresent()) {
+      fill();
+  }
+  turnRight();
+  moveForward();
+  while (holePresent()) {
+      fill();
+  }
+  turnLeft();
+  moveForward();
+  while (holePresent()) {
+      fill();
+  }
+}
