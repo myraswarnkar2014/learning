@@ -1,0 +1,7 @@
+moveForward();
+placeBlockAhead("cobblestone");
+moveForward();
+moveForward();
+destroyBlock();
+moveForward();
+destroyBlock();
