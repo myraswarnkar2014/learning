@@ -1,0 +1,27 @@
+whenSetup(function () {
+  makeAnonymousDanceSprite("UNICORN", {x: 200, y: 200});
+  makeNewDanceSpriteGroup(4, "PINEAPPLE", "grid");
+  setPropEach("PINEAPPLE", "scale", 60);
+  setPropEach("UNICORN", "scale", 30);
+  setTintEachInline(sprites, '#ffff00');
+});
+
+everySeconds(4, "measures", function () {
+  setBackgroundEffectWithPalette("rand", "default");
+});
+
+whenKey("up", function () {
+  doMoveEachLR(sprites, MOVES.DoubleJam, 1);
+});
+
+whenKey("left", function () {
+  doMoveEachLR(sprites, MOVES.XFever, -1);
+});
+
+whenKey("down", function () {
+  doMoveEachLR(sprites, MOVES.Clown, 1);
+});
+
+whenKey("right", function () {
+  doMoveEachLR(sprites, MOVES.Dab, -1);
+});
