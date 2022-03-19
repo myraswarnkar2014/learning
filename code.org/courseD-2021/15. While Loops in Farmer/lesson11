@@ -1,0 +1,14 @@
+for (var count = 0; count < 2; count++) {
+  moveForward();
+}
+dig();
+turnLeft();
+for (var count2 = 0; count2 < 4; count2++) {
+  moveForward();
+}
+dig();
+turnLeft();
+for (var count3 = 0; count3 < 5; count3++) {
+  moveForward();
+}
+dig();
