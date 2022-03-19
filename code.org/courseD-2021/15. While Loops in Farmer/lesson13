@@ -1,0 +1,9 @@
+for (var count = 0; count < 3; count++) {
+  while (isPathForward()) {
+      moveForward();
+  }
+  while (holePresent()) {
+      fill();
+  }
+  turnRight();
+}
