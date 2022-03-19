@@ -1,0 +1,49 @@
+turnRight();
+for (var count = 0; count < 6; count++) {
+  moveForward();
+}
+placeBlock("grass");
+turnLeft();
+for (var count2 = 0; count2 < 2; count2++) {
+  moveForward();
+  placeBlock("grass");
+}
+turnRight();
+for (var count3 = 0; count3 < 3; count3++) {
+  moveForward();
+  placeBlock("grass");
+}
+turnRight();
+for (var count4 = 0; count4 < 3; count4++) {
+  moveForward();
+  placeBlock("grass");
+}
+moveForward();
+placeBlock("grass");
+turnRight();
+for (var count5 = 0; count5 < 3; count5++) {
+  moveForward();
+  placeBlock("grass");
+}
+turnRight();
+moveForward();
+placeBlock("grass");
+turnRight();
+turnRight();
+for (var count6 = 0; count6 < 4; count6++) {
+  moveForward();
+}
+for (var count7 = 0; count7 < 4; count7++) {
+  placeBlockAhead("logBirch");
+  moveForward();
+}
+turnRight();
+for (var count8 = 0; count8 < 10; count8++) {
+  moveForward();
+}
+placeBlockAhead("oreEmerald");
+moveForward();
+moveForward();
+turnRight();
+shear();
+OK
