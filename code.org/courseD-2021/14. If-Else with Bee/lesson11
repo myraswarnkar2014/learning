@@ -1,0 +1,11 @@
+for (var count2 = 0; count2 < 4; count2++) {
+  for (var count = 0; count < 3; count++) {
+      moveForward();
+  }
+  turnRight();
+  if (atFlower()) {
+    getNectar();
+  } else {
+    makeHoney();
+  }
+}
