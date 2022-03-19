@@ -1,0 +1,17 @@
+for (var count = 0; count < 6; count++) {
+  moveForward();
+  if (atFlower()) {
+    getNectar();
+  }
+}
+turnLeft();
+for (var count2 = 0; count2 < 2; count2++) {
+  moveForward();
+}
+turnLeft();
+for (var count3 = 0; count3 < 6; count3++) {
+  moveForward();
+  if (atFlower()) {
+    getNectar();
+  }
+}
