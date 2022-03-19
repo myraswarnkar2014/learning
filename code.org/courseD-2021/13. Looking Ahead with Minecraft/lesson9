@@ -1,0 +1,8 @@
+turnLeft();
+moveForward();
+destroyBlock();
+moveForward();
+placeTorch();
+destroyBlock();
+moveForward();
+placeTorch();
