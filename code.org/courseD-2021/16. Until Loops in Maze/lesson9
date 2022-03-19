@@ -1,0 +1,11 @@
+turnRight();
+turnRight();
+while (notFinished()) {
+  while (isPathForward()) {
+      moveForward();
+    if (isPathRight()) {
+      turnRight();
+    }
+  }
+  turnLeft();
+}
