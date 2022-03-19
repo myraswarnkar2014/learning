@@ -1,0 +1,27 @@
+for (var count = 0; count < 7; count++) {
+  moveForward();
+}
+while (holePresent()) {
+  fill();
+}
+turnLeft();
+for (var count2 = 0; count2 < 4; count2++) {
+  moveForward();
+}
+while (holePresent()) {
+  fill();
+}
+turnLeft();
+for (var count3 = 0; count3 < 6; count3++) {
+  moveForward();
+}
+while (holePresent()) {
+  fill();
+}
+turnLeft();
+for (var count4 = 0; count4 < 2; count4++) {
+  moveForward();
+}
+while (holePresent()) {
+  fill();
+}
