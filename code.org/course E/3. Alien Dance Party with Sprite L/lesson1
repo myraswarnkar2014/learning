@@ -1,0 +1,7 @@
+setBackgroundImageAs("background_landscape09_1");
+makeNewSpriteAnon("yellow alien", ({"x":200,"y":320}));
+
+spriteClicked("when", ({costume: "yellow alien"}), function (extraArgs) {
+  addBehaviorSimple(({costume: "yellow alien"}), patrollingUpDown());
+});
+OK
