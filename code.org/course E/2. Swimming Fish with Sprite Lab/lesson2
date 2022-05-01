@@ -1,0 +1,2 @@
+makeNewSpriteAnon("tumbleweed", ({"x":300,"y":301}));
+addBehaviorSimple(({costume: "tumbleweed"}), tumbling());
