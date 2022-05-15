@@ -1,0 +1,14 @@
+for (var count2 = 0; count2 < 2; count2++) {
+  penColour(colour_random());
+  for (var count = 0; count < 6; count++) {
+      turnLeft(60);
+    moveForward(100);
+    turnLeft(60);
+    moveForward(100);
+    turnLeft(120);
+    moveForward(100);
+    turnLeft(60);
+    moveForward(100);
+  }
+  turnRight(90);
+}
