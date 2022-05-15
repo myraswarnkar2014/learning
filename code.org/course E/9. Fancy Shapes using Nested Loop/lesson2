@@ -1,0 +1,14 @@
+for (var count2 = 0; count2 < 6; count2++) {
+  turnLeft(60);
+  for (var count = 0; count < 3; count++) {
+      moveForward(100);
+    turnLeft(120);
+  }
+}
+
+/*
+turnRight(120);
+moveForward(100);
+turnRight(120);
+moveForward(100);
+*/
