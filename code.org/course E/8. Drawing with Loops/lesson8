@@ -1,0 +1,5 @@
+penWidth(20);
+for (var count = 0; count < 5; count++) {
+  moveForward(200);
+  turnRight(144);
+}
