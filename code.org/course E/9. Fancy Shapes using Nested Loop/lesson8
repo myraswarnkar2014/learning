@@ -1,0 +1,8 @@
+for (var count2 = 0; count2 < 6; count2++) {
+  for (var count = 0; count < 4; count++) {
+      moveForward(100);
+    turnLeft(90);
+  }
+  jumpForward(50);
+  turnRight(60);
+}
