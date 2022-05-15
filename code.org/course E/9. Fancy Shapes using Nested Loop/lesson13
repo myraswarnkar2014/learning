@@ -1,0 +1,46 @@
+penColour('#ffff00');
+turnLeft(90);
+jumpForward(100);
+turnLeft(90);
+for (var count = 0; count < 360; count++) {
+  moveForward(1);
+  turnRight(1);
+}
+turnLeft(90);
+jumpForward(250);
+turnRight(90);
+jumpForward(175);
+penPattern("waterLine");
+moveBackward(325);
+turnRight(90);
+jumpBackward(20);
+penPattern("spikyLine");
+for (var count2 = 0; count2 < 4; count2++) {
+  moveForward(325);
+  turnLeft(90);
+}
+jumpForward(200);
+turnLeft(90);
+penPattern("swirly2Line");
+moveForward(300);
+turnLeft(90);
+jumpForward(100);
+penColour('#228b22');
+penPattern("DEFAULT");
+moveForward(75);
+turnLeft(180);
+moveForward(100);
+jumpBackward(50);
+turnLeft(60);
+moveForward(50);
+jumpBackward(50);
+turnRight(120);
+moveForward(50);
+jumpBackward(50);
+turnLeft(60);
+jumpForward(30);
+turnLeft(60);
+jumpForward(25);
+moveBackward(25);
+turnRight(120);
+moveForward(25);
