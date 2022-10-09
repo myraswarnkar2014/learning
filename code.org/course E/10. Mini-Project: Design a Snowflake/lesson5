@@ -1,0 +1,10 @@
+for (var count2 = 0; count2 < 2; count2++) {
+  for (var count = 0; count < 50; count++) {
+      jumpToXY(200, 200);
+    turnRight(1);
+    moveForward(100);
+    turnRight(90);
+    jumpForward(50);
+  }
+  turnRight(90);
+}
