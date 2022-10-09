@@ -1,0 +1,17 @@
+function build_short_bridge() {
+  for (var count = 0; count < 2; count++) {
+      moveForward();
+    placeBlock("netherrack");
+  }
+}
+
+function build_long_bridge() {
+  for (var count2 = 0; count2 < 5; count2++) {
+      moveForward();
+    placeBlock("netherrack");
+  }
+}
+
+build_short_bridge();
+destroyBlock();
+build_long_bridge();
