@@ -1,0 +1,6 @@
+repeatUntilGoal(function () {
+  moveForward();
+  ifStandingOn('seaLantern', function () {
+    turn("right");
+  });
+});
