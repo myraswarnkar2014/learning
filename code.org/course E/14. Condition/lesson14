@@ -1,0 +1,7 @@
+repeatUntilConduit(function () {
+  placePrismarine();
+  moveForward();
+  ifStandingOnLimit('seaLantern', function () {
+    turn("right");
+  });
+});
