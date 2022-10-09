@@ -1,0 +1,9 @@
+function clear_path() {
+  destroyBlock();
+  moveForward();
+  placeBlock("gravel");
+}
+
+for (var count = 0; count < 6; count++) {
+  clear_path();
+}
