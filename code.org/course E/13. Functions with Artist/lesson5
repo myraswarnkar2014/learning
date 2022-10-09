@@ -1,0 +1,21 @@
+function draw_a_window() {
+  for (var count3 = 0; count3 < 4; count3++) {
+      for (var count2 = 0; count2 < 4; count2++) {
+          moveForward(25);
+      turnRight(90);
+    }
+    turnLeft(90);
+  }
+}
+
+for (var count = 0; count < 3; count++) {
+  draw_a_window();
+  jumpForward(100);
+}
+jumpBackward(100);
+turnRight(90);
+jumpForward(150);
+draw_a_window();
+turnRight(90);
+jumpForward(200);
+draw_a_window();
