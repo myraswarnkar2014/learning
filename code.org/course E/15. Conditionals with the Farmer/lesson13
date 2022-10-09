@@ -1,0 +1,9 @@
+for (var count = 0; count < 6; count++) {
+  while (!hasLettuce()) {
+      moveForward();
+  }
+  while (hasLettuce()) {
+      getLettuce();
+  }
+  turnRight();
+}
