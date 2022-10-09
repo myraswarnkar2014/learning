@@ -1,0 +1,37 @@
+function function_2() {
+  turnRight();
+  moveForward();
+  turnLeft();
+  for (var count3 = 0; count3 < 2; count3++) {
+      moveForward();
+  }
+  for (var count4 = 0; count4 < 5; count4++) {
+      destroyBlock();
+    moveForward();
+    placeDirection("grass", "2");
+  }
+}
+
+function function_1() {
+  for (var count5 = 0; count5 < 7; count5++) {
+      moveForward();
+    placeBlock("rails");
+  }
+  for (var count6 = 0; count6 < 7; count6++) {
+      moveBackward();
+  }
+}
+
+function_1();
+function_2();
+moveForward();
+turnLeft();
+for (var count = 0; count < 3; count++) {
+  moveForward();
+}
+turnLeft();
+for (var count2 = 0; count2 < 5; count2++) {
+  destroyBlock();
+  moveForward();
+  placeDirection("grass", "2");
+}
