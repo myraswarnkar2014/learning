@@ -1,0 +1,10 @@
+repeatUntilGoal(function () {
+  turn("right");
+  for (var count = 0; count < 3; count++) {
+      moveForward();
+  }
+  turn("left");
+  for (var count2 = 0; count2 < 3; count2++) {
+      moveForward();
+  }
+});
