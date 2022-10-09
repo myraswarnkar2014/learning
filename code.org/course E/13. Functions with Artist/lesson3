@@ -1,0 +1,9 @@
+function draw_a_star() {
+  for (var count = 0; count < 8; count++) {
+      moveForward(25);
+    moveBackward(25);
+    turnLeft(45);
+  }
+}
+
+draw_a_star();
