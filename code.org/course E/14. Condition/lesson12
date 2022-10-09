@@ -1,0 +1,9 @@
+repeatUntilGoal(function () {
+  moveForward();
+  ifStandingOn('blueCoralBlock', function () {
+    turn("right");
+  });
+  ifStandingOn('redCoralBlock', function () {
+    turn("left");
+  });
+});
