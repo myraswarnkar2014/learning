@@ -1,0 +1,9 @@
+repeatUntilGoal(function () {
+  moveForward();
+  ifPath('right', function () {
+    turn("right");
+  });
+  ifPath('left', function () {
+    turn("left");
+  });
+});
