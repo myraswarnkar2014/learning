@@ -1,0 +1,14 @@
+for (var count4 = 0; count4 < 10; count4++) {
+  for (var count3 = 0; count3 < 28; count3++) {
+      for (var count2 = 0; count2 < 2; count2++) {
+          for (var count = 0; count < 4; count++) {
+              moveForward(30);
+        turnRight(75);
+        moveForward(30);
+        turnLeft(75);
+      }
+      turnRight(180);
+    }
+    turnLeft(60);
+  }
+}
