@@ -1,0 +1,20 @@
+for (var count = 0; count < 7; count++) {
+  while (!hasLettuce()) {
+      moveForward();
+  }
+  while (hasLettuce()) {
+      getLettuce();
+  }
+  if (isPathLeft()) {
+    turnLeft();
+  } else {
+    turnRight();
+  }
+}
+
+/*
+if (isPathForward()) {
+  moveForward();
+} else {
+}
+*/
