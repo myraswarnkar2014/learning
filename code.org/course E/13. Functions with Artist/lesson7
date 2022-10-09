@@ -1,0 +1,13 @@
+function draw_a_line_of_squares() {
+  for (var count = 0; count < 4; count++) {
+    }
+}
+
+function draw_square() {
+  for (var count2 = 0; count2 < 4; count2++) {
+      moveForward(50);
+    turnLeft(90);
+  }
+}
+
+draw_a_line_of_squares();
