@@ -1,0 +1,13 @@
+for (var count = 0; count < 2; count++) {
+  moveForward();
+}
+
+/*
+for (var count2 = 0; count2 < 4; count2++) {
+  moveForward();
+}
+turnRight();
+for (var count3 = 0; count3 < 4; count3++) {
+  moveForward();
+}
+*/
