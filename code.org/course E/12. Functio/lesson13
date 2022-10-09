@@ -1,0 +1,26 @@
+function fix_long_path() {
+  for (var count3 = 0; count3 < 3; count3++) {
+      destroyBlock();
+    moveForward();
+    placeBlock("rails");
+  }
+}
+
+function fix_short_path() {
+  for (var count4 = 0; count4 < 2; count4++) {
+      destroyBlock();
+    moveForward();
+    placeBlock("rails");
+  }
+}
+
+turnLeft();
+for (var count = 0; count < 2; count++) {
+  moveForward();
+}
+fix_short_path();
+turnRight();
+for (var count2 = 0; count2 < 3; count2++) {
+  moveForward();
+}
+fix_long_path();
