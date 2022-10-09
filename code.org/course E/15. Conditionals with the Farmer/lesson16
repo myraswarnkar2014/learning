@@ -1,0 +1,13 @@
+for (var count = 0; count < 9; count++) {
+  while (!hasLettuce()) {
+      moveForward();
+  }
+  while (hasLettuce()) {
+      getLettuce();
+  }
+  if (isPathLeft()) {
+    turnLeft();
+  } else {
+    turnRight();
+  }
+}
