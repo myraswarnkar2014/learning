@@ -1,0 +1,62 @@
+turn("left");
+placeBlock("magentaCoralBlock");
+for (var count = 0; count < 2; count++) {
+  moveForward();
+  placeBlock("prismarine");
+}
+moveForward();
+for (var count2 = 0; count2 < 2; count2++) {
+  placeBlock("yellowCoralBlock");
+}
+turn("right");
+for (var count3 = 0; count3 < 2; count3++) {
+  moveForward();
+  placeBlock("redCoralBlock");
+  moveForward();
+  placeBlock("kelp");
+}
+turn("left");
+moveForward();
+for (var count4 = 0; count4 < 2; count4++) {
+  placeBlock("blueIce");
+  moveForward();
+}
+turn("right");
+for (var count5 = 0; count5 < 2; count5++) {
+  moveForward();
+  placeBlock("seaGrass");
+}
+for (var count6 = 0; count6 < 3; count6++) {
+  moveForward();
+  placeBlock("blueIce");
+}
+for (var count7 = 0; count7 < 4; count7++) {
+  turn("right");
+  moveForward();
+  spawnEntity("cod");
+}
+turn("left");
+turn("left");
+moveForward();
+moveForward();
+turn("left");
+for (var count8 = 0; count8 < 5; count8++) {
+  moveForward();
+}
+turn("right");
+for (var count9 = 0; count9 < 6; count9++) {
+  moveForward();
+}
+turn("right");
+for (var count10 = 0; count10 < 2; count10++) {
+  moveForward();
+  placeBlock("yellowDeadCoralBlock");
+}
+
+/*
+turn("right");
+*/
+
+/*
+moveForward();
+*/
