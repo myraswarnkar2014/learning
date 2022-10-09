@@ -1,0 +1,6 @@
+while (!hasLettuce()) {
+  moveForward();
+}
+while (hasLettuce()) {
+  getLettuce();
+}
