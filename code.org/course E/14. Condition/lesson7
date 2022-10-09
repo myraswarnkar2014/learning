@@ -1,0 +1,10 @@
+repeatUntilGoal(function () {
+  moveForward();
+  turn("right");
+  moveForward();
+  turn("right");
+  moveForward();
+  turn("right");
+  turn("left");
+  turn("left");
+});
