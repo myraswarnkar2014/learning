@@ -1,0 +1,35 @@
+function moving_east(this_sprite) {
+  moveInDirection(this_sprite, 5, "East");
+}
+
+function spinning_left(this_sprite) {
+  turn(this_sprite, 6, "left");
+}
+
+function spinning_right(this_sprite) {
+  turn(this_sprite, 6, "right");
+}
+
+function shrinking(this_sprite) {
+  changePropBy(this_sprite, "scale", -1);
+}
+
+function growing(this_sprite) {
+  changePropBy(this_sprite, "scale", 1);
+}
+
+function moving_south(this_sprite) {
+  moveInDirection(this_sprite, 5, "South");
+}
+
+function moving_north(this_sprite) {
+  moveInDirection(this_sprite, 5, "North");
+}
+
+function moving_west(this_sprite) {
+  moveInDirection(this_sprite, 5, "West");
+}
+
+setBackgroundImageAs("grid_1");
+makeNewSpriteAnon("flower2_1", ({"x":200,"y":200}));
+addBehaviorSimple(({costume: "flower2_1"}), new Behavior(growing, []));
